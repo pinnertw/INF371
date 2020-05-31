@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="5">
+<prover id="0" name="Alt-Ergo" version="2.2.0" timelimit="5" steplimit="0" memlimit="1000"/>
+<file name="../tri.mlw">
+<theory name="Swap_predicate">
+ <goal name="swap_exchange">
+ <proof prover="0"><result status="timeout" time="5.00"/></proof>
+ <transf name="split_vc" >
+  <goal name="swap_exchange.0">
+  <proof prover="0"><result status="timeout" time="5.00"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="swap_permut_all" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="16"/></proof>
+ </goal>
+</theory>
+<theory name="Selection_sort">
+ <goal name="VC swap" expl="VC for swap" proved="true">
+ <proof prover="0"><result status="valid" time="0.01" steps="48"/></proof>
+ <transf name="split_vc" proved="true" >
+  <goal name="VC swap.0" expl="index in array bounds" proved="true">
+  <proof prover="0"><result status="valid" time="0.00" steps="8"/></proof>
+  </goal>
+  <goal name="VC swap.1" expl="index in array bounds" proved="true">
+  <proof prover="0"><result status="valid" time="0.00" steps="8"/></proof>
+  </goal>
+  <goal name="VC swap.2" expl="index in array bounds" proved="true">
+  <proof prover="0"><result status="valid" time="0.00" steps="8"/></proof>
+  </goal>
+  <goal name="VC swap.3" expl="index in array bounds" proved="true">
+  <proof prover="0"><result status="valid" time="0.00" steps="14"/></proof>
+  </goal>
+  <goal name="VC swap.4" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.01" steps="56"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC sort" expl="VC for sort">
+ <proof prover="0" obsolete="true"><result status="unknown" time="0.02"/></proof>
+ <transf name="split_vc" >
+  <goal name="VC sort.0" expl="loop invariant init" proved="true">
+  <proof prover="0"><result status="valid" time="0.00" steps="4"/></proof>
+  </goal>
+  <goal name="VC sort.1" expl="index in array bounds" proved="true">
+  <proof prover="0"><result status="valid" time="0.00" steps="8"/></proof>
+  </goal>
+  <goal name="VC sort.2" expl="loop invariant init" proved="true">
+  <proof prover="0"><result status="valid" time="0.00" steps="11"/></proof>
+  </goal>
+  <goal name="VC sort.3" expl="index in array bounds" proved="true">
+  <proof prover="0"><result status="valid" time="0.00" steps="17"/></proof>
+  </goal>
+  <goal name="VC sort.4" expl="index in array bounds" proved="true">
+  <proof prover="0"><result status="valid" time="0.00" steps="21"/></proof>
+  </goal>
+  <goal name="VC sort.5" expl="loop invariant preservation">
+  <proof prover="0"><result status="unknown" time="0.02"/></proof>
+  </goal>
+  <goal name="VC sort.6" expl="loop invariant preservation">
+  <proof prover="0"><result status="unknown" time="0.01"/></proof>
+  </goal>
+  <goal name="VC sort.7" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.00" steps="13"/></proof>
+  </goal>
+  <goal name="VC sort.8" expl="loop invariant preservation">
+  <proof prover="0"><result status="unknown" time="0.01"/></proof>
+  </goal>
+  <goal name="VC sort.9" expl="out of loop bounds" proved="true">
+  <proof prover="0"><result status="valid" time="0.00" steps="8"/></proof>
+  </goal>
+  <goal name="VC sort.10" expl="postcondition">
+  <proof prover="0"><result status="unknown" time="0.01"/></proof>
+  </goal>
+  <goal name="VC sort.11" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.00" steps="4"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+</file>
+</why3session>

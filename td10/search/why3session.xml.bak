@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="5">
+<prover id="0" name="Alt-Ergo" version="2.2.0" timelimit="5" steplimit="0" memlimit="1000"/>
+<file name="../search.mlw" proved="true">
+<theory name="Binary_search">
+ <goal name="VC binary_search">
+ <proof prover="0" obsolete="true"><result status="unknown" time="0.02"/></proof>
+ <transf name="split_vc" >
+  <goal name="VC binary_search.0">
+  <proof prover="0"><result status="valid" time="0.00" steps="7"/></proof>
+  </goal>
+  <goal name="VC binary_search.1">
+  <proof prover="0"><result status="valid" time="0.00" steps="10"/></proof>
+  </goal>
+  <goal name="VC binary_search.2">
+  <proof prover="0"><result status="valid" time="0.00" steps="13"/></proof>
+  </goal>
+  <goal name="VC binary_search.3">
+  <proof prover="0"><result status="valid" time="0.01" steps="16"/></proof>
+  </goal>
+  <goal name="VC binary_search.4">
+  <proof prover="0"><result status="unknown" time="0.03"/></proof>
+  </goal>
+  <goal name="VC binary_search.5">
+  <proof prover="0"><result status="valid" time="0.00" steps="15"/></proof>
+  </goal>
+  <goal name="VC binary_search.6">
+  <proof prover="0"><result status="valid" time="0.01" steps="18"/></proof>
+  </goal>
+  <goal name="VC binary_search.7">
+  <proof prover="0"><result status="valid" time="0.02" steps="131"/></proof>
+  </goal>
+  <goal name="VC binary_search.8">
+  <proof prover="0"><result status="valid" time="0.01" steps="39"/></proof>
+  </goal>
+  <goal name="VC binary_search.9">
+  <proof prover="0"><result status="unknown" time="0.01"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+</file>
+</why3session>
